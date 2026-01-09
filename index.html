@@ -1,39 +1,43 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+  <meta property="og:title" content="Ludwig.L - Graphiste indépendant à Boulogne-sur-Mer | Concept Art & Character Design">
+  <meta property="og:description" content="Illustration, Design graphique concept art et character design. Portfolio de projets professionnels et personnels.">
+  <meta property="og:image" content="https://tonsite.fr/images/preview.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tonsite.fr">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio : Ludwig illustrateur et graphiste freelance, Boulogne-sur-mer">
-  <title>Ludwig — Portfolio</title>
+  <meta name="description" content="Portfolio : Portfolio de Ludwig, graphiste indépendant à Boulogne-sur-mer. Concept art, character design et illustrations pour studios d'animation et de jeux videos.">
+  <title>Ludwig.L - Graphiste indépendant à Boulogne-sur-Mer | Concept Art & Character Design</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="thumbnail-ludwig.svg" height>
 </head>
 
-<!-- MODALE PROJET -->
-<div class="modal" id="project-modal">
-  <div class="modal-overlay"></div>
-  <div class="modal-content">
-    <button class="modal-close" aria-label="Fermer la fenêtre">×</button>
-    <div class="modal-grid">
-      <div class="modal-images">
-        <button class="slider-btn prev">⯇</button>
-        <div class="slider">
-          <div class="slider-track">
-          </div>
-        </div> 
-          <button class="slider-btn next">⯈</button>
-         <div class="slider-indicators"></div>  
-      </div>
-      <div class="modal-info">
-        <h2 class="modal-title"></h2>
-        <span id="modal-badge" class="project-badge"></span>
-        <p class="modal-description"></p>
+<body>
+                                  <!-- MODALE PROJET -->
+  <div class="modal" id="project-modal">
+    <div class="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Fermer la fenêtre">×</button>
+      <div class="modal-grid">
+        <div class="modal-images">
+          <button class="slider-btn prev">⯇</button>
+          <div class="slider">
+            <div class="slider-track">
+            </div>
+          </div> 
+            <button class="slider-btn next">⯈</button>
+           <div class="slider-indicators"></div>  
+        </div>
+        <div class="modal-info">
+          <h2 class="modal-title"></h2>
+          <span id="modal-badge" class="project-badge"></span>
+          <p class="modal-description"></p>
+        </div>
       </div>
     </div>
   </div>
-</div>
-
-<body>
 
 <header class="header portfolio-only">
   <div class="header-left">
@@ -42,7 +46,7 @@
     <!-- NAV -->
 
     <nav class="nav">
-      <span class="chevron">⏵</span>
+      <span class="chevron">&#x23F5</span>
       <a href="#" data-panel="portfolio" class="active">PORTFOLIO</a>
       <a href="#" data-panel="about">A PROPOS</a>
       <a href="#" data-panel="contact">CONTACT</a>
@@ -51,6 +55,7 @@
       <a href="https://www.instagram.com/lu2vig_" target="_blank"> <img src="images/ICON_INSTA.svg" height="50" class="iconeRS" alt="Logo Instagram"></a>
       <a href="https://www.facebook.com/ludwig.freelance" target="_blank"> <img src="images/ICON_FB.svg" height="50" class="iconeRS" alt="Logo Facebook"></a>
       <a href="https://www.linkedin.com/in/ludwig-lacheré" target="_blank"> <img src="images/ICON_LINKEDIN.svg" height="50" class="iconeRS" alt="Logo Linkedin"></a>
+      <a href="https://www.artstation.com/lu2vig" target="_blank"> <img src="images/ICON_ARTSTATION.svg" height="50" class="iconeRS" alt="Logo Artstation"></a>
     </div>
   </div>
 
@@ -59,196 +64,250 @@
   <div class="header-right">
     <div class="panel about" id="about">
       <img src="images/thumbnail-ludwig.svg" height="130" class="thumbnail" alt="Portrait doodle de Ludwig">
+      <h1>
+        Graphiste indépendant à Boulogne-sur-mer — Illustration, Concept Art & Character Design
+      </h1>
       <p>
         Créatif indépendant depuis 2022, j’accompagne entreprises et particuliers dans la création de visuels impactant : affiches, identité graphique, design, illustrations, packaging, et bien plus encore. Je ne me fixe aucune limite dans mon envie de créer des images marquantes et adaptées à chaque projet. <br>Originaire de la Côte d’Opale, je travaille aussi bien localement qu’avec des clients à travers le monde. Issu d’une formation en cinéma d’animation, je puise mon inspiration dans la culture populaire. Mon approche s’adapte à chaque projet, tout en cultivant une identité visuelle en constante évolution. Je vous invite à découvrir ci-après une sélection de projets sur lesquels j’ai eu la chance de travailler. Bonne découverte, et au plaisir d’échanger avec vous !
       </p>
     </div>
     <!-- Formulaire -->
     <div class="panel" id="contact">
+      <div>
+        <p>
+          Vous avez un projet qui peut nécessiter l'intervention d'un Graphiste professionnel plutôt sympa ? Vous pouvez me contacter via ce formulaire :
+        </p>
+      </div>
+       
       <div class="contact-wrapper">
         <div class="contact-title">Formulaire</div>
         <form class="contact-form" action="https://formspree.io/f/mkogpvpv" method="POST">
           <label>
             Nom / Prénom / Société
-            <input type="text" name="text">
+            <input type="text" name="Nom">
           </label>
           <label>
             Adresse mail
-            <input type="email" name="email">
+            <input type="email" name="Adresse mail">
           </label>
           <label>
             Objet
-            <input type="text">
+            <input type="text" name="Objet">
           </label>
           <label class="redimensionable">
             Votre message
-            <textarea name="message"></textarea>
+            <textarea name="Message"></textarea>
           </label>
           <button type="submit">Envoyer</button>
         </form>
       </div>
     </div>
     <button class="back-to-portfolio">
-      ⮝ Fermer
+      &#x22BC Fermer
     </button>
   </div>
 </header>
+<h2 class="sr-only">
+Portfolio de projets professionnels et personnels en illustration et design graphique
+</h2>
 <section id="projects"  class="portfolio-grid">
   <div> 
 
-    <article class="project" 
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork" 
       data-type="pro"
       data-title="Brasserie Chromatique - Étiquettes de bière"
       data-description="Une collaboration de longue durée avec une micro-brasserie des Hauts-de-France autour de la création de visuels originaux pour l’habillage de leurs bières éphémères, ainsi que la refonte de leur collection permanente. 
       Depuis 2022, cette épopée créative a donné naissance à plus de 28 nouvelles étiquettes. Des illustrations adaptées aux recettes éphémères et innovantes de la brasserie, en accord avec son slogan évocateur : « Vous en faire boire de toutes les couleurs »."
       data-images="projet01-1.jpg,projet01-2.jpg, projet01-3.jpg">
-      <img src="images/VIGNETTES/projet01.webp" alt="Bouteilles de bière avec des étiquettes illustrées originales">
+      <img loading="lazy" src="images/VIGNETTES/projet01.webp" alt="Bouteilles de bière avec des étiquettes illustrées originales">
       <div class="project-title">Brasserie Chromatique - Étiquettes de bière</div>
     </article>
 
     <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="perso"
+      data-title="Fan-art - Lirith corrompue"
+      data-description="Le Fan-art de Lirith - Une tiefling évoluant dans l'actual play 'Tablequest' qui prend la forme d'un loup garou déformé par une corruption encore inconnue. "
+      data-images="projet10-1.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet10.jpg" alt="Illustration d'une tiefling métmorphosé en loup garou corrompu">
+      <div class="project-title">Fan-art - Lirith corrompue</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="pro"
+      data-title="Les Créations d'Amandine - Packaging d'infusions"
+      data-description="Les 8 848 km qui séparent la France de La Réunion ne sont pas un frein à la créativité. Une collaboration à distance avec une créatrice de recettes d’infusions naturelles autour de la création d’illustrations vectorielles célébrant les paysages emblématiques de l’île."
+      data-images="projet03-1.jpg, projet03-2.jpg, projet03-3.jpg, projet03-4.jpg">
+      <img loading="lazy" src="images/VIGNETTES/projet03.jpg" alt="Packaging d'infusions colorés, illustrations vectorielles">
+      <div class="project-title">Les Créations d'Amandine - Packaging d'infusions</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
       data-type="pro"
       data-title="Detroit RH - Identité graphique"
       data-description="Detroit RH est une agence de ressources humaines spécialisée dans les filières de l’économie bleue. Toute jeune entreprise dédiée à ce domaine, nous avons travaillé sur une identité professionnelle et moderne, adaptée aux univers maritimes. 
       Identité graphique, brochure, cartes de visite, webdesign."
       data-images="projet07-1.jpg, projet07-2.jpg, projet07-3.jpg, projet07-4.jpg">
-      <img src="images/VIGNETTES/projet07.jpg" alt="Brochure design pour le cabinet de Resources Humaines Detroit RH">
+      <img loading="lazy" src="images/VIGNETTES/projet07.jpg" alt="Brochure design pour le cabinet de Resources Humaines Detroit RH">
       <div class="project-title">Detroit RH - Identité graphique</div>
     </article>
 
-    <article class="project"
-      data-type="pro"
-      data-title="Les Créations d'Amandine - Packaging d'infusions"
-      data-description="Les 8 848 km qui séparent la France de La Réunion ne sont pas un frein à la créativité. Une collaboration à distance avec une créatrice de recettes d’infusions naturelles autour de la création d’illustrations vectorielles célébrant les paysages emblématiques de l’île."
-      data-images="projet03-1.jpg, projet03-2.jpg, projet03-3.jpg, projet03-4.jpg">
-      <img src="images/VIGNETTES/projet03.jpg" alt="Packaging d'infusions colorés, illustrations vectorielles">
-      <div class="project-title">Les Créations d'Amandine - Packaging d'infusions</div>
-    </article>
 
     <article class="project"
-      data-type="pro"
-      data-title="Just Escape Lille - Concept-art"
-      data-description="Une nouvelle occasion pour moi d’apprendre et d’explorer différentes techniques et approches. Au service d’une agence lilloise d’escape games et de jeux de rôle, j’ai eu pour mission de créer des visuels pour illustrer leurs jeux. Adaptation, compréhension et ouverture d’esprit sont les maîtres mots pour ce type de projet."
-      data-images="projet04-1.jpg, projet04-2.jpg, projet04-3.jpg">
-      <img src="images/VIGNETTES/projet04.webp" alt="Illustration d'un tableau de jeu Qui est Loup Garou">
-      <div class="project-title">Just Escape Lille - Concept art</div>
-    </article>
-
-    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
       data-type="pro"
       data-title="Devin Conseil - Identité graphique"
       data-description="Expert en ressources humaines, spécialisé dans cinq grandes filières du végétal, Devin Conseil est une jeune entreprise menée par un vétéran de son domaine. Lors de la création de sa charte graphique, nous nous sommes concentrés sur une identité sobre et moderne, ancrée dans le terroir, accessible et facilement reconnaissable.
       Identité graphique, brochure, cartes de visite, webdesign."
       data-images="projet05-1.jpg, projet05-2.jpg, projet05-3.jpg, projet05-4.jpg, projet05-5.jpg">
-      <img src="images/VIGNETTES/projet05.webp" alt="Brochure design pour le cabinet de Ressources Humaines Devin Conseil">
+      <img loading="lazy" src="images/VIGNETTES/projet05.webp" alt="Brochure design pour le cabinet de Ressources Humaines Devin Conseil">
       <div class="project-title">Devin Conseil - Identité graphique</div>
     </article>
 
     <article class="project"
-      data-type="pro"
-      data-title="Dare the Unknown - Design de Cartes"
-      data-description="En partenariat avec la NASA et en collaboration avec le duo Space Delirium, j’ai conçu 22 cartes différentes pour le jeu de société « Dare the Unknown ». Entre liberté artistique et précision technique dans la représentation des différents appareils spatiaux, la créativité prend une nouvelle dimension."
-      data-images="projet02-1.jpg, projet02-2.jpg, projet02-3.jpg">
-      <img src="images/VIGNETTES/projet02.webp" alt="Cartes de jeu de société avec le logo NASA">
-      <div class="project-title">Dare the Unknown - Design de Cartes</div>
-    </article>
-
-    <article class="project"
-      data-type="pro"
-      data-title="La Famille en Nord - Livre jeunesse régional"
-      data-description="La Famille en Nord est un livre-jeu 'cherche et trouve' que j’ai eu le plaisir d’illustrer. Il a été édité et publié par Aubane Éditions, une maison d’édition locale qui œuvre activement à la mise en avant de la région.
-      L’aventure a commencé en 2023, lorsque Aubane Éditions m’a contacté pour la réalisation de ce projet ambitieux. C’était la première fois que je travaillais sur un projet d’édition jeunesse de ce type, et cela représentait un véritable défi.
-      Dans un premier temps, il a fallu définir une direction artistique et un style spécifique pour les personnages. Le plus gros du travail consistait à retranscrire au mieux les paysages de la région. J’ai dû faire preuve de patience pour soigner chaque détail et dessiner tous les petits personnages, tout en respectant les contraintes de temps liées à la sortie du livre. Suite au succès du premier tome, nous nous sommes lancés dans la création du deuxième en 2024, qui a su, lui aussi, trouver son public. 
-      "
-      data-images="projet06-1.jpg, projet06-2.jpg, projet06-3.jpg">
-      <img src="images/VIGNETTES/projet06.webp" alt="Montage photo de livres pour enfant La Famille en Nord">
-      <div class="project-title">La Famille en Nord - Livre jeunesse régional</div>
-    </article>
-
-    <article class="project"
-      data-type="pro"
-      data-title="Festival On s'y rue - Logo et visuels"
-      data-description="'On s'y rue' est un festival de quartier organisé à Boulogne-sur-Mer. Porté par les commerçants locaux, l’événement transforme la rue en un lieu de fête et de rencontres, dans une ambiance chaleureuse et décontractée.
-      Pour la 3eme edition du festival, j'ai eu la chance de participer à la création du logo de l'évènement ainsi que quelques visuels pour accompagner la communication. "
-      data-images="projet08-1.webp, projet08-2.webp, projet08-3.webp, projet08-4.webp">
-      <img src="images/VIGNETTES/projet08.jpg" alt="Logo représentant une matelotte de Boulogne-sur-mer pour un festival de rue">
-      <div class="project-title">Festival On s'y rue - Logo et visuels </div>
-    </article>
-
-    <article class="project"
-      data-type="perso"
-      data-title="CDC - Créature marine"
-      data-description="Ma participation au concours 'character design challenge' du 05/2025 sur le thème 'Merling Undersea Kingdom'. " 
-      data-images="projet09-1.webp, projet09-2.webp">
-      <img src="images/VIGNETTES/projet09.jpg" alt="Illustration d'une créature humanoïde marine">
-      <div class="project-title">CDC - Créature marine</div>
-    </article>
-
-    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
       data-type="pro"
       data-title="Produit dérivé - Brasserie chromatique"
       data-description="J’ai travaillé sur le design de deux t-shirts pour la Brasserie Chromatique. L’objectif était de créer du merch inspiré des étiquettes de leur collection permanente : La Banquise Attack et Hop’Pale.
       J’ai imaginé des designs graphiques forts au dos, avec un rappel plus subtil sur le devant. L’idée n’était pas de faire du merch “juste pour faire du merch”, mais de proposer des t-shirts attractifs, pensés pour plaire au-delà des seuls amateurs de bière, tout en conservant une direction artistique fun et cohérente avec l’univers de la brasserie."
       data-images="projet16-1.webp, projet16-3.webp, projet16-2.webp, projet16-4.webp">
-      <img src="images/VIGNETTES/projet16.webp" alt="Photo d'un t-shirt avec des machots ninjas">
+      <img loading="lazy" src="images/VIGNETTES/projet16.webp" alt="Photo d'un t-shirt avec des machots ninjas">
       <div class="project-title">Produit dérivé - Brasserie chromatique</div>
     </article>
 
+  
     <article class="project"
-      data-type="perso"
-      data-title="Fan-art - Lirith corrompue"
-      data-description="Le Fan-art de Lirith - personnage tiré de l'actual play 'Tablequest' qui prend la forme d'un loup garou corrompu. "
-      data-images="projet10-1.webp">
-      <img src="images/VIGNETTES/projet10.jpg" alt="Illustration d'une tiefling métmorphosé en loup garou corrompu">
-      <div class="project-title">Fan-art - Lirith corrompue</div>
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="pro"
+      data-title="La Famille en Nord - Livre jeunesse régional"
+      data-description="La Famille en Nord est un livre-jeu 'cherche et trouve' que j’ai eu le plaisir d’illustrer. Il a été édité et publié par Aubane Éditions, une maison d’édition locale qui œuvre activement à la mise en avant de la région.
+      L’aventure a commencé en 2023, lorsque Aubane Éditions m’a contacté pour la réalisation de ce projet ambitieux. C’était la première fois que je travaillais sur un projet d’édition jeunesse de ce type, et cela représentait un véritable défi.
+      Dans un premier temps, il a fallu définir une direction artistique et un style spécifique pour les personnages. Le plus gros du travail consistait à retranscrire au mieux les paysages de la région. J’ai dû faire preuve de patience pour soigner chaque détail et dessiner tous les petits personnages, tout en respectant les contraintes de temps liées à la sortie du livre. Suite au succès du premier tome, nous nous sommes lancés dans la création du deuxième en 2024, qui a su, lui aussi, trouver son public."
+      data-images="projet06-1.jpg, projet06-2.jpg, projet06-3.jpg">
+      <img loading="lazy" src="images/VIGNETTES/projet06.webp" alt="Montage photo de livres pour enfant La Famille en Nord">
+      <div class="project-title">La Famille en Nord - Livre jeunesse régional</div>
     </article>
 
     <article class="project"
-      data-type="perso"
-      data-title="DTIYS - Kromatic Games"
-      data-description="Ma participation au concours 'Draw This In Your Style' organisé par Kromatic Games"
-      data-images="projet12-1.webp">
-      <img src="images/VIGNETTES/projet12.jpg" alt="Character design d'un personnage imaginaire">
-      <div class="project-title">DTIYS - Kromatic Games</div>
-    </article>
-
-        <article class="project"
-      data-type="perso"
-      data-title="Character concept - Ice lands wanderer"
-      data-description="Recherches de personnages originaux"
-      data-images="projet11-1.webp, projet11-2.webp, projet11-3.webp, projet11-4.webp">
-      <img src="images/VIGNETTES/projet11.jpg" alt="Character design de deux personnages humanoïdes">
-      <div class="project-title">Character concept - Ice lands wanderer</div>
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="pro"
+      data-title="Dare the Unknown - Design de Cartes"
+      data-description="En partenariat avec la NASA et en collaboration avec le duo Space Delirium, j’ai conçu 22 cartes différentes pour le jeu de société « Dare the Unknown ». Entre liberté artistique et précision technique dans la représentation des différents appareils spatiaux, la créativité prend une nouvelle dimension."
+      data-images="projet02-1.jpg, projet02-2.jpg, projet02-3.jpg">
+      <img loading="lazy" src="images/VIGNETTES/projet02.webp" alt="Cartes de jeu de société avec le logo NASA">
+      <div class="project-title">Dare the Unknown - Design de Cartes</div>
     </article>
 
     <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
       data-title="Concept Art - Inspiration DND"
       data-description="Concept art - ' Boss fight music starts playing ' "
       data-images="projet13-1.webp, projet13-2.webp">
-      <img src="images/VIGNETTES/projet13.jpg" alt="Concept-art illustrant un dragon poursuivant un orc">
+      <img loading="lazy" src="images/VIGNETTES/projet13.jpg" alt="Concept-art illustrant un dragon poursuivant un orc">
       <div class="project-title">Concept Art - Inspiration DND</div>
     </article>
 
     <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="pro"
+      data-title="Festival On s'y rue - Logo et visuels"
+      data-description="'On s'y rue' est un festival de quartier organisé à Boulogne-sur-Mer. Porté par les commerçants locaux, l’événement transforme la rue en un lieu de fête et de rencontres, dans une ambiance chaleureuse et décontractée.
+      Pour la 3eme edition du festival, j'ai eu la chance de participer à la création du logo de l'évènement ainsi que quelques visuels pour accompagner la communication. "
+      data-images="projet08-1.webp, projet08-2.webp, projet08-3.webp, projet08-4.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet08.jpg" alt="Logo représentant une matelotte de Boulogne-sur-mer pour un festival de rue">
+      <div class="project-title">Festival On s'y rue - Logo et visuels </div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="perso"
+      data-title="CDC - Créature marine"
+      data-description="Ma participation au concours 'character design challenge' du 05/2025 sur le thème 'Merling Undersea Kingdom'.
+      Vaelith – l’Héritier du Chant Muet
+      Fils d’une noble et d’un esprit abyssal, Vaelith est né marqué par une union interdite. Rejeté par les siens, déformé par la magie noire, il erre dans les profondeurs, entre haine et nostalgie. Son corps porte les traces de sa douleur : une silhouette décharnée, cabossée, rongée par les abysses.
+      Sa mère, exilée puis morte de chagrin, hante encore ses pensées. Son père, voix lointaine et obscure, continue de le guider vers des forces interdites.
+      Il avance, tiraillé entre vengeance et espoir, une lanterne vide à la main, comme un souvenir d'une lumière qu’il n’a jamais connu." 
+      data-images="projet09-1.webp, projet09-2.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet09.jpg" alt="Illustration d'une créature humanoïde marine">
+      <div class="project-title">CDC - Créature marine</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="perso"
+      data-title="CDC - The Night King"
+      data-description="Ma participation au concours 'character design challenge' du 09/2025 sur le thème 'Cinema Monsters'
+      Je voulais rendre hommage à une série qui a marqué toute une génération, comme Game of Thrones, ainsi qu’à ce monstre qui n’a jamais eu besoin de parler pour être craint de tous."
+      data-images="projet17-1.webp, projet17-2.webp, projet17-3.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet17.webp" alt="Fan-art du Night King de Game of Throne sur un cheval squelette">
+      <div class="project-title">CDC - The Night King</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="perso"
+      data-title="DTIYS - Kromatic Games"
+      data-description="Ma participation au concours 'Draw This In Your Style' organisé par Kromatic Games"
+      data-images="projet12-1.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet12.jpg" alt="Character design d'un personnage imaginaire">
+      <div class="project-title">DTIYS - Kromatic Games</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="perso"
+      data-title="CDC - Survivant post-apocalyptique"
+      data-description="Ma participation au concours 'character design challenge' du 03/2025 sur le thème 'Post-Apocalyptic Wastelander'.
+      - Saïr, le Roi sans Racines -
+      Dans un monde en ruines, il s’est élevé seul. Désormais chef des Nés-Sans-Maîtres, il rejette les adultes et leurs mensonges. Sans passé, sans attaches, seul le vent et les cendres le guident."
+      data-images="projet15-1.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet15.jpg" alt="Illustration d'un enfant survivant post apocalyptique sur un trône enfantin">
+      <div class="project-title">CDC - Survivant post-apocalyptique</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="perso"
+      data-title="Character concept - Ice lands wanderer"
+      data-description="Recherches de personnages originaux"
+      data-images="projet11-1.webp, projet11-2.webp, projet11-3.webp, projet11-4.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet11.jpg" alt="Character design de deux personnages humanoïdes">
+      <div class="project-title">Character concept - Ice lands wanderer</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
+      data-type="pro"
+      data-title="Just Escape Lille - Concept-art"
+      data-description="Une nouvelle occasion pour moi d’apprendre et d’explorer différentes techniques et approches. Au service d’une agence lilloise d’escape games et de jeux de rôle, j’ai eu pour mission de créer des visuels pour illustrer leurs jeux. Adaptation, compréhension et ouverture d’esprit sont les maîtres mots pour ce type de projet."
+      data-images="projet04-1.jpg, projet04-2.jpg, projet04-3.jpg">
+      <img loading="lazy" src="images/VIGNETTES/projet04.webp" alt="Illustration d'un tableau de jeu Qui est Loup Garou">
+      <div class="project-title">Just Escape Lille - Concept art</div>
+    </article>
+
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
       data-title="Visuels - Streampack"
       data-description="Illustrations inspiré de license connues du jeu vidéo destinée à être animé pour un overlay de streaming"
       data-images="projet14-1.webp, projet14-2.webp, projet14-3.webp, projet14-4.webp">
-      <img src="images/VIGNETTES/projet14.jpg" alt="Illustration type doodle de deux personnages dans l'univers de The Last Of Us">
+      <img loading="lazy" src="images/VIGNETTES/projet14.jpg" alt="Illustration type doodle de deux personnages dans l'univers de The Last Of Us">
       <div class="project-title">Visuels - Streampack</div>
     </article>
 
-     <article class="project"
+    <article class="project"
+      itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
-      data-title="CDC - Survivant post-apocalyptique"
-      data-description="Ma participation au concours 'character design challenge' du 03/2025 sur le thème 'Post-Apocalyptic Wastelander'."
-      data-images="projet15-1.webp">
-      <img src="images/VIGNETTES/projet15.jpg" alt="Illustration d'une créature humanoïde marine">
-      <div class="project-title">CDC - Survivant post-apocalyptique</div>
+      data-title="Abécédaire fantastique"
+      data-description="La création d’un abécédaire fantastique unique, dans lequel des animaux ordinaires se transforment en personnages issus de l’imaginaire fantasy. Chaque lettre donne naissance à une créature singulière : une grenouille devenue guerrière, un tigre métamorphosé en tailleur et pleins d'autres encore. À travers ces figures hybrides, le projet mêle bestiaire du quotidien et codes de la fantasy, dans le but de transmettre aux plus jeune ma passion pour l'univers de la fantasy"
+      data-images="projet18-1.webp, projet18-2.webp, projet18-3.webp">
+      <img loading="lazy" src="images/VIGNETTES/projet18.webp" alt="Une planche de character design d'animaux communs avec des attributs fantastiques">
+      <div class="project-title">Abécédaire fantastique</div>
     </article>
-
-    
 
   </div>
 </section>
@@ -544,6 +603,35 @@
         'scale(1) translate3d(0,0,0)';
     });
 
+    /* ===== DOUBLE TAP ZOOM (MOBILE) ===== */
+
+    let lastTap = 0;
+    let isZoomed = false;
+
+    sliderTrackEl.addEventListener('touchend', e => {
+      if (isZoomed) return;
+      if (!activeImg) return;
+
+      const now = Date.now();
+      const delay = now - lastTap;
+
+      if (delay < 300 && delay > 0) {
+        // 🟣 DOUBLE TAP DÉTECTÉ
+        e.preventDefault();
+
+        if (!isZoomed) {
+          activeImg.style.transform = 'scale(2) translate3d(0,0,0)';
+          isZoomed = true;
+        } else {
+          activeImg.style.transform = 'scale(1) translate3d(0,0,0)';
+          isZoomed = false;
+        }
+      }
+
+      lastTap = now;
+    });
+
+
 
 
     /* ===== FERMETURE ===== */
@@ -551,6 +639,7 @@
     function closeModal() {
       modal.style.display = 'none';
       document.body.style.overflow = '';
+      isZoomed = false;
     }
 
     ['click', 'touchend'].forEach(evt => {

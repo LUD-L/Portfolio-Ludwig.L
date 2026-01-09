@@ -25,6 +25,13 @@ body {
   background-color: #F6E3D4;
 }
 
+h1 {
+  font-family: AvantGarde, sans-serif;
+  font-size: 2rem;
+  max-width: 700px;
+  margin-bottom: 10px;
+}
+
 .footer {
   display: flex;
   justify-content: flex-start;
@@ -40,6 +47,14 @@ body {
 .header {
   min-height: 65vh;
   display: flex;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
 }
 
 .header.portfolio-only {
@@ -188,7 +203,6 @@ body {
   font-size: clamp(0.7rem, 1.4vw, 1.4rem);
   color: #656D34;
   margin-bottom: 1rem;
-  line-height: 1.5;
 }
 
 #about {
@@ -213,6 +227,7 @@ body {
   pointer-events: none;
   transition: opacity 0.35s ease, transform 0.35s ease;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   animation-delay: 2s;
@@ -232,8 +247,6 @@ body {
 }
 
 .panel.active {
-  display: flex;
-  justify-content: center;
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -258,11 +271,16 @@ body {
 
 /* TEXTE VERTICAL */
 
+.panel.contact {
+  display: flex;
+  flex-direction: column;
+}
+
 .contact-title {
   font-family: Regilla, serif;
   font-size: 6rem;
   color: #8698EB;
-  writing-mode: vertical-rl;
+  writing-mode: sideways-rl;
   transform: rotate(180deg);
 }
 
@@ -280,6 +298,21 @@ body {
 
 
 /* FORM */
+
+.contact-form p {
+  color: #8698EB;
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: DM-sans, sans-serif;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+  .contact-form p {
+    display: none;
+  }
+}
+
 
 .contact-form {
   display: flex;
@@ -326,6 +359,19 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
+
+#contact.panel p {
+  font-size: 1.2rem;
+  padding: 0rem 4rem 2rem 11rem;
+  text-align: center;
+  font-family: DM-sans, sans-serif;
+  color: #8698EB;
+}
+
+@media (max-width: 900px) {
+  #contact.panel p {  display: none;}
+}
+
 
 .redimensionable{
   resize: both;
@@ -496,7 +542,7 @@ body {
 }
 
 .modal-info {
-  margin: 3rem;
+  margin: 2rem;
   overflow-y: auto;
 }
 
@@ -660,6 +706,10 @@ body {
 
 @media (max-width: 900px) {
 
+  h1 {
+    font-size: 1rem;
+  }
+
   .header:not(.portfolio-only) .header-left {
   width: 100%;
   }
@@ -713,7 +763,10 @@ body {
 @media (max-width: 900px) {
 
   .modal-close {
-    padding: 0.8rem;
+    position: static;
+    align-self: flex-end;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
   }
 
   /* MODALE */
@@ -733,7 +786,6 @@ body {
 
   /* IMAGES */
   .modal-images {
-    padding: 0.3rem;
   }
 
   .slider {
