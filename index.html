@@ -41,7 +41,7 @@
 
 <header class="header portfolio-only">
   <div class="header-left">
-    <img class="logo" src="images/LOGO.png" alt="Logo Ludwig.L">
+    <img class="logo" src="images/LOGO03.png" alt="Logo Ludwig.L">
 
     <!-- NAV -->
 
@@ -71,7 +71,9 @@
         Créatif indépendant depuis 2022, j’accompagne entreprises et particuliers dans la création de visuels impactant : affiches, identité graphique, design, illustrations, packaging, et bien plus encore. Je ne me fixe aucune limite dans mon envie de créer des images marquantes et adaptées à chaque projet. <br>Originaire de la Côte d’Opale, je travaille aussi bien localement qu’avec des clients à travers le monde. Issu d’une formation en cinéma d’animation, je puise mon inspiration dans la culture populaire. Mon approche s’adapte à chaque projet, tout en cultivant une identité visuelle en constante évolution. Je vous invite à découvrir ci-après une sélection de projets sur lesquels j’ai eu la chance de travailler. Bonne découverte, et au plaisir d’échanger avec vous !
       </p>
     </div>
+
     <!-- Formulaire -->
+
     <div class="panel" id="contact">
       <div>
         <p>
@@ -320,6 +322,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
 
   <script>
     /* ===== NAV ===== */
+
     const links = document.querySelectorAll('.nav a');
     const panels = document.querySelectorAll('.panel');
     const chevron = document.querySelector('.chevron');
@@ -356,13 +359,13 @@ Portfolio de projets professionnels et personnels en illustration et design grap
         );
 
         /* 🔥 CHEVRON */
+
         moveChevron(link);
 
         header.classList.toggle('portfolio-only', target === 'portfolio');
       });
     });
 
-    /* position initiale */
     moveChevron(document.querySelector('.nav a.active'));
 
     /* ===== MODALE ===== */
@@ -397,11 +400,10 @@ Portfolio de projets professionnels et personnels en illustration et design grap
         sliderRect = slider.getBoundingClientRect();
       };
 
-      // 🧠 image déjà chargée
       if (activeImg.complete) {
         init();
       } 
-      // 🧠 image pas encore chargée
+    
       else {
         activeImg.onload = init;
       }
@@ -581,7 +583,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       const dx = (x - sliderRect.width / 2) / (sliderRect.width / 2);
       const dy = (y - sliderRect.height / 2) / (sliderRect.height / 2);
 
-      // zone morte centrale (UX++)
+    
       const deadZone = 0.15;
       if (Math.abs(dx) < deadZone && Math.abs(dy) < deadZone) return;
 
@@ -616,7 +618,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       const delay = now - lastTap;
 
       if (delay < 300 && delay > 0) {
-        // 🟣 DOUBLE TAP DÉTECTÉ
+        
         e.preventDefault();
 
         if (!isZoomed) {
@@ -630,9 +632,6 @@ Portfolio de projets professionnels et personnels en illustration et design grap
 
       lastTap = now;
     });
-
-
-
 
     /* ===== FERMETURE ===== */
 
