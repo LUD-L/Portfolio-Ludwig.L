@@ -322,7 +322,7 @@ h2 {
   font-family: DM-sans,sans-serif;
   font-weight: 500;
   text-align: justify;
-  font-size: clamp(1rem, 1.4vw, 1.4rem);
+  font-size: 1.1rem;
   color: #656D34;
   margin-bottom: 1.5rem;
 }
@@ -331,12 +331,7 @@ h2 {
   padding-inline: clamp(2rem, 5vw, 6rem);
 }
 
-.author {
-  font-family: Regilla,sans-serif;
-  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
-  color: #656D34;
 
-}
 
 /* PANELS */
 
@@ -853,7 +848,7 @@ button:hover {
 @media (max-width: 900px) {
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .header:not(.portfolio-only) .header-left {
