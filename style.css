@@ -126,7 +126,8 @@ h2 {
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.2s ease;
-  margin-top: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
 }
 
 @media (max-width: 900px) {
@@ -323,7 +324,7 @@ h2 {
   text-align: justify;
   font-size: clamp(1rem, 1.4vw, 1.4rem);
   color: #656D34;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 #about {
@@ -480,7 +481,8 @@ h2 {
 
 .contact-form button {
   opacity: 85%;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
   font-size: 1rem;
   font-family: DM-sans, sans-serif;
   align-self: center;
@@ -1036,12 +1038,10 @@ button:hover {
 .header-border {
   display: none;
   border: none;
-  margin-top: 1rem;
   padding: 0.7rem;
   justify-content: center;
   background-color: #8698EB;
 }
-
 
 
 @media (max-width: 900px) {
@@ -1050,7 +1050,6 @@ button:hover {
   }
 
   .header-border {
-  margin-top: 1rem;
   display: flex;
   padding: 1rem;
   justify-content: center;
