@@ -11,7 +11,7 @@
   <meta name="description" content="Portfolio : Portfolio de Ludwig, graphiste indépendant à Boulogne-sur-mer. Concept art, character design et illustrations pour studios d'animation et de jeux videos.">
   <title>Ludwig.L - Graphiste indépendant à Boulogne-sur-Mer | Concept Art & Character Design</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="thumbnail-ludwig.svg" height>
+  <link rel="icon" href="favicon.png">
 </head>
 
 <body>
@@ -50,6 +50,7 @@
       <a href="#" data-panel="portfolio" class="active">PORTFOLIO</a>
       <a href="#" data-panel="about">A PROPOS</a>
       <a href="#" data-panel="contact">CONTACT</a>
+      <a href="#" data-panel="services">SERVICES</a>
     </nav>
     <div class="reseaux">
       <a href="https://www.instagram.com/lu2vig_" target="_blank"> <img src="images/ICON_INSTA.svg" height="50" class="iconeRS" alt="Logo Instagram"></a>
@@ -62,13 +63,14 @@
   <!-- Colonne droite -->
 
   <div class="header-right">
+
     <div class="panel about" id="about">
       <img src="images/thumbnail-ludwig.svg" height="130" class="thumbnail" alt="Portrait doodle de Ludwig">
       <h1>
-        Graphiste indépendant à Boulogne-sur-mer — Illustration, Concept Art & Character Design
+        Graphiste indépendant - Illustration, Concept Art & Character Design
       </h1>
       <p>
-        Créatif indépendant depuis 2022, j’accompagne entreprises et particuliers dans la création de visuels impactant : affiches, identité graphique, design, illustrations, packaging, et bien plus encore. Je ne me fixe aucune limite dans mon envie de créer des images marquantes et adaptées à chaque projet. <br>Originaire de la Côte d’Opale, je travaille aussi bien localement qu’avec des clients à travers le monde. Issu d’une formation en cinéma d’animation, je puise mon inspiration dans la culture populaire. Mon approche s’adapte à chaque projet, tout en cultivant une identité visuelle en constante évolution. Je vous invite à découvrir ci-après une sélection de projets sur lesquels j’ai eu la chance de travailler. Bonne découverte, et au plaisir d’échanger avec vous !
+        Créatif indépendant de Boulogne-sur-mer exerçant depuis 2022. J’accompagne entreprises et particuliers dans la création de visuels impactants : affiche, identité graphique, design, illustration, packaging, et bien plus encore. Je ne me fixe aucune limite dans mon envie de créer des images marquantes et adaptées à chaque projet. <br>Originaire de la Côte d’Opale, je travaille aussi bien localement qu’avec des clients à travers le monde. Issu d’une formation en cinéma d’animation, je puise mon inspiration dans la culture populaire. Mon approche s’adapte à chaque projet, tout en cultivant une identité visuelle en constante évolution. Je vous invite à découvrir une sélection de projets sur lesquels j’ai eu la chance de travailler. Bonne découverte, et au plaisir d’échanger avec vous !
       </p>
     </div>
 
@@ -77,10 +79,9 @@
     <div class="panel" id="contact">
       <div>
         <p>
-          Vous avez un projet qui peut nécessiter l'intervention d'un Graphiste professionnel plutôt sympa ? Vous pouvez me contacter via ce formulaire :
+          Vous avez un projet qui nécessite l'intervention d'un graphiste professionnel plutôt sympa ? Vous pouvez me contacter via ce formulaire :
         </p>
       </div>
-       
       <div class="contact-wrapper">
         <div class="contact-title">Formulaire</div>
         <form class="contact-form" action="https://formspree.io/f/mkogpvpv" method="POST">
@@ -104,10 +105,50 @@
         </form>
       </div>
     </div>
-    <button class="back-to-portfolio">
-      &#x22BC Fermer
-    </button>
+    <div class="panel services" id="services">
+      <div class="services-wrapper">
+        <div class="services-title">Services</div>
+          <div class="services-list">
+            <div>
+                <h2>Illustration, concept art et character design</h2>
+                <p>
+                  Je crée des concepts et conçois des illustrations originales pour donner vie à vos projets culturels, ludiques ou éditoriaux.
+                </p>
+                <ul>
+                  <li>Illustration éditoriale (livres, affiches, jeux, presse)</li>
+                  <li>Character design pour des productions audiovisuelles et éditoriales</li>
+                  <li>Illustrations pour des jeux de société (contenu éditorial, communication, packaging)</li>
+                  <li>Habillage et packaging (étiquettes, produits artisanaux, éditions limitées)</li>
+                  <li>Événementiel et campagnes publicitaires</li>
+                </ul>
+              </div>
+              <div>
+                <h2>Communication graphique & identité de marque</h2>
+                <p>
+                  Je mets mes compétences au service des marques, entreprises et indépendants pour les accompagner dans la création de visuels cohérents et impactants.
+                </p>
+                <ul>
+                  <li>Création de logo et identité visuelle</li>
+                  <li>Supports de communication (affiches, brochures, cartes, flyers)</li>
+                  <li>Visuels pour réseaux sociaux, communication digitale et webdesign</li>
+                  <li>Événementiel pro & particuliers (faire parts, invitations)</li>
+                  <li>Montage vidéo et motion design</li>
+                </ul>
+              </div>
+          </div>   
+      </div>
+      <div class="CTA">
+        <h2 >
+          Chaque projet est unique, discutons ensemble du vôtre !   
+        </h2>
+        <a href="#" data-panel="contact"> <button>Me contacter</button></a>  
+      </div>
+    </div>
+    <div class="header-border">
+      <button class="back-to-portfolio" aria-label="Revenir au portfolio" > &#8613 </button>  
+    </div>
   </div>
+
 </header>
 <h2 class="sr-only">
 Portfolio de projets professionnels et personnels en illustration et design graphique
@@ -119,8 +160,8 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork" 
       data-type="pro"
       data-title="Brasserie Chromatique - Étiquettes de bière"
-      data-description="Une collaboration de longue durée avec une micro-brasserie des Hauts-de-France autour de la création de visuels originaux pour l’habillage de leurs bières éphémères, ainsi que la refonte de leur collection permanente. 
-      Depuis 2022, cette épopée créative a donné naissance à plus de 28 nouvelles étiquettes. Des illustrations adaptées aux recettes éphémères et innovantes de la brasserie, en accord avec son slogan évocateur : « Vous en faire boire de toutes les couleurs »."
+      data-description="Une collaboration de longue durée avec une micro-brasserie des Hauts-de-France autour de la création de visuels originaux pour l’habillage de leurs bières éphémères ainsi que la refonte de leur collection permanente. 
+      Depuis 2022, cette épopée créative a donné naissance à plus de 28 nouvelles étiquettes. J'adapte les illustrations aux recettes éphémères et innovantes de la brasserie, en accord avec son slogan évocateur : « Vous en faire boire de toutes les couleurs »."
       data-images="projet01-1.jpg,projet01-2.jpg, projet01-3.jpg">
       <img loading="lazy" src="images/VIGNETTES/projet01.webp" alt="Bouteilles de bière avec des étiquettes illustrées originales">
       <div class="project-title">Brasserie Chromatique - Étiquettes de bière</div>
@@ -130,7 +171,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
       data-title="Fan-art - Lirith corrompue"
-      data-description="Le Fan-art de Lirith - Une tiefling évoluant dans l'actual play 'Tablequest' qui prend la forme d'un loup garou déformé par une corruption encore inconnue. "
+      data-description="Fan-art - Lirith est un personnage tiré de l'actual play 'Tablequest'. C'est une Tiefling druide qui prend la forme d'un loup garou déformé par une corruption encore inconnue. "
       data-images="projet10-1.webp">
       <img loading="lazy" src="images/VIGNETTES/projet10.jpg" alt="Illustration d'une tiefling métmorphosé en loup garou corrompu">
       <div class="project-title">Fan-art - Lirith corrompue</div>
@@ -140,7 +181,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="pro"
       data-title="Les Créations d'Amandine - Packaging d'infusions"
-      data-description="Les 8 848 km qui séparent la France de La Réunion ne sont pas un frein à la créativité. Une collaboration à distance avec une créatrice de recettes d’infusions naturelles autour de la création d’illustrations vectorielles célébrant les paysages emblématiques de l’île."
+      data-description="Les 8 848 km qui séparent la France de La Réunion ne sont pas un frein à la créativité. Cette collaboration à distance, avec une créatrice de recettes d’infusions naturelles, autour de la création d’illustrations vectorielles célébre les paysages emblématiques de l’île."
       data-images="projet03-1.jpg, projet03-2.jpg, projet03-3.jpg, projet03-4.jpg">
       <img loading="lazy" src="images/VIGNETTES/projet03.jpg" alt="Packaging d'infusions colorés, illustrations vectorielles">
       <div class="project-title">Les Créations d'Amandine - Packaging d'infusions</div>
@@ -151,7 +192,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       data-type="pro"
       data-title="Detroit RH - Identité graphique"
       data-description="Detroit RH est une agence de ressources humaines spécialisée dans les filières de l’économie bleue. Toute jeune entreprise dédiée à ce domaine, nous avons travaillé sur une identité professionnelle et moderne, adaptée aux univers maritimes. 
-      Identité graphique, brochure, cartes de visite, webdesign."
+      Identité graphique, brochure, carte de visite, webdesign."
       data-images="projet07-1.jpg, projet07-2.jpg, projet07-3.jpg, projet07-4.jpg">
       <img loading="lazy" src="images/VIGNETTES/projet07.jpg" alt="Brochure design pour le cabinet de Resources Humaines Detroit RH">
       <div class="project-title">Detroit RH - Identité graphique</div>
@@ -162,8 +203,8 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="pro"
       data-title="Devin Conseil - Identité graphique"
-      data-description="Expert en ressources humaines, spécialisé dans cinq grandes filières du végétal, Devin Conseil est une jeune entreprise menée par un vétéran de son domaine. Lors de la création de sa charte graphique, nous nous sommes concentrés sur une identité sobre et moderne, ancrée dans le terroir, accessible et facilement reconnaissable.
-      Identité graphique, brochure, cartes de visite, webdesign."
+      data-description="Expert en ressources humaines, spécialisé dans cinq grandes filières du végétal, Devin Conseil est une jeune entreprise menée par un chef d'entreprise expérimenté dans son domaine. Lors de la création de sa charte graphique, nous nous sommes concentrés sur une identité sobre et moderne, ancrée dans le terroir, accessible et facilement reconnaissable.
+      Identité graphique, brochure, carte de visite, webdesign."
       data-images="projet05-1.jpg, projet05-2.jpg, projet05-3.jpg, projet05-4.jpg, projet05-5.jpg">
       <img loading="lazy" src="images/VIGNETTES/projet05.webp" alt="Brochure design pour le cabinet de Ressources Humaines Devin Conseil">
       <div class="project-title">Devin Conseil - Identité graphique</div>
@@ -172,9 +213,9 @@ Portfolio de projets professionnels et personnels en illustration et design grap
     <article class="project"
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="pro"
-      data-title="Produit dérivé - Brasserie chromatique"
-      data-description="J’ai travaillé sur le design de deux t-shirts pour la Brasserie Chromatique. L’objectif était de créer du merch inspiré des étiquettes de leur collection permanente : La Banquise Attack et Hop’Pale.
-      J’ai imaginé des designs graphiques forts au dos, avec un rappel plus subtil sur le devant. L’idée n’était pas de faire du merch “juste pour faire du merch”, mais de proposer des t-shirts attractifs, pensés pour plaire au-delà des seuls amateurs de bière, tout en conservant une direction artistique fun et cohérente avec l’univers de la brasserie."
+      data-title="Produit dérivé - Brasserie Chromatique"
+      data-description="J’ai travaillé sur le design de deux t-shirts pour la Brasserie Chromatique. L’objectif était de créer du merch inspiré des étiquettes de leur collection permanente : La Banquise Attack et la Hop’Pale.
+      J’ai imaginé des designs graphiques forts au dos, avec un rappel plus subtil sur le devant. L’idée n’était pas de faire du merch “juste pour faire du merch” mais de proposer des t-shirts attractifs, pensés pour plaire au-delà des seuls amateurs de bière, tout en conservant une direction artistique fun et cohérente avec l’univers de la brasserie."
       data-images="projet16-1.webp, projet16-3.webp, projet16-2.webp, projet16-4.webp">
       <img loading="lazy" src="images/VIGNETTES/projet16.webp" alt="Photo d'un t-shirt avec des machots ninjas">
       <div class="project-title">Produit dérivé - Brasserie chromatique</div>
@@ -185,8 +226,8 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="pro"
       data-title="La Famille en Nord - Livre jeunesse régional"
-      data-description="La Famille en Nord est un livre-jeu 'cherche et trouve' que j’ai eu le plaisir d’illustrer. Il a été édité et publié par Aubane Éditions, une maison d’édition locale qui œuvre activement à la mise en avant de la région.
-      L’aventure a commencé en 2023, lorsque Aubane Éditions m’a contacté pour la réalisation de ce projet ambitieux. C’était la première fois que je travaillais sur un projet d’édition jeunesse de ce type, et cela représentait un véritable défi.
+      data-description="La Famille en Nord est un livre-jeu 'cherche et trouve' que j’ai eu le plaisir d’illustrer. Il a été édité et publié par Aubane Éditions, une maison d’édition locale qui œuvre activement pour la mise en avant de la région.
+      L’aventure a commencé en 2023, lorsqu'Aubane Éditions m’a contacté pour la réalisation de ce projet ambitieux. C’était la première fois que je travaillais sur un projet d’édition jeunesse de ce type et cela représentait un véritable défi.
       Dans un premier temps, il a fallu définir une direction artistique et un style spécifique pour les personnages. Le plus gros du travail consistait à retranscrire au mieux les paysages de la région. J’ai dû faire preuve de patience pour soigner chaque détail et dessiner tous les petits personnages, tout en respectant les contraintes de temps liées à la sortie du livre. Suite au succès du premier tome, nous nous sommes lancés dans la création du deuxième en 2024, qui a su, lui aussi, trouver son public."
       data-images="projet06-1.jpg, projet06-2.jpg, projet06-3.jpg">
       <img loading="lazy" src="images/VIGNETTES/projet06.webp" alt="Montage photo de livres pour enfant La Famille en Nord">
@@ -207,7 +248,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
       data-title="Concept Art - Inspiration DND"
-      data-description="Concept art - ' Boss fight music starts playing ' "
+      data-description="Concept art - 'Boss fight music starts playing'. "
       data-images="projet13-1.webp, projet13-2.webp">
       <img loading="lazy" src="images/VIGNETTES/projet13.jpg" alt="Concept-art illustrant un dragon poursuivant un orc">
       <div class="project-title">Concept Art - Inspiration DND</div>
@@ -244,7 +285,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       data-title="CDC - The Night King"
       data-description="Ma participation au concours 'character design challenge' du 09/2025 sur le thème 'Cinema Monsters'
       Je voulais rendre hommage à une série qui a marqué toute une génération, comme Game of Thrones, ainsi qu’à ce monstre qui n’a jamais eu besoin de parler pour être craint de tous."
-      data-images="projet17-1.webp, projet17-2.webp, projet17-3.webp">
+      data-images="projet17-1.webp, projet17-2.webp">
       <img loading="lazy" src="images/VIGNETTES/projet17.webp" alt="Fan-art du Night King de Game of Throne sur un cheval squelette">
       <div class="project-title">CDC - The Night King</div>
     </article>
@@ -253,7 +294,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
       data-title="DTIYS - Kromatic Games"
-      data-description="Ma participation au concours 'Draw This In Your Style' organisé par Kromatic Games"
+      data-description="Ma participation au concours 'Draw This In Your Style' organisé par Kromatic Games."
       data-images="projet12-1.webp">
       <img loading="lazy" src="images/VIGNETTES/projet12.jpg" alt="Character design d'un personnage imaginaire">
       <div class="project-title">DTIYS - Kromatic Games</div>
@@ -265,7 +306,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       data-title="CDC - Survivant post-apocalyptique"
       data-description="Ma participation au concours 'character design challenge' du 03/2025 sur le thème 'Post-Apocalyptic Wastelander'.
       - Saïr, le Roi sans Racines -
-      Dans un monde en ruines, il s’est élevé seul. Désormais chef des Nés-Sans-Maîtres, il rejette les adultes et leurs mensonges. Sans passé, sans attaches, seul le vent et les cendres le guident."
+      Dans un monde en ruines, il s’est élevé seul. Désormais chef des Nés-Sans-Maîtres, il rejette les adultes et leurs mensonges. Sans passé, sans attaches, seuls le vent et les cendres le guident."
       data-images="projet15-1.webp">
       <img loading="lazy" src="images/VIGNETTES/projet15.jpg" alt="Illustration d'un enfant survivant post apocalyptique sur un trône enfantin">
       <div class="project-title">CDC - Survivant post-apocalyptique</div>
@@ -295,7 +336,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
       data-title="Visuels - Streampack"
-      data-description="Illustrations inspiré de license connues du jeu vidéo destinée à être animé pour un overlay de streaming"
+      data-description="Illustrations inspirées de licenses connues du jeu vidéo destinées à être animées pour un overlay de streaming."
       data-images="projet14-1.webp, projet14-2.webp, projet14-3.webp, projet14-4.webp">
       <img loading="lazy" src="images/VIGNETTES/projet14.jpg" alt="Illustration type doodle de deux personnages dans l'univers de The Last Of Us">
       <div class="project-title">Visuels - Streampack</div>
@@ -305,7 +346,7 @@ Portfolio de projets professionnels et personnels en illustration et design grap
       itemscope itemtype="https://schema.org/CreativeWork"
       data-type="perso"
       data-title="Abécédaire fantastique"
-      data-description="La création d’un abécédaire fantastique unique, dans lequel des animaux ordinaires se transforment en personnages issus de l’imaginaire fantasy. Chaque lettre donne naissance à une créature singulière : une grenouille devenue guerrière, un tigre métamorphosé en tailleur et pleins d'autres encore. À travers ces figures hybrides, le projet mêle bestiaire du quotidien et codes de la fantasy, dans le but de transmettre aux plus jeune ma passion pour l'univers de la fantasy"
+      data-description="J'ai voulu créer un abécédaire fantastique unique, dans lequel des animaux ordinaires se transforment en personnages issus de l’imaginaire fantasy. Chaque lettre donne naissance à une créature singulière : une grenouille devenue guerrière, un tigre métamorphosé en tailleur et plein d'autres encore. À travers ces figures hybrides, le projet mêle bestiaire du quotidien et codes de la fantasy, dans le but de transmettre aux plus jeunes ma passion pour l'univers de la fantasy."
       data-images="projet18-1.webp, projet18-2.webp, projet18-3.webp">
       <img loading="lazy" src="images/VIGNETTES/projet18.webp" alt="Une planche de character design d'animaux communs avec des attributs fantastiques">
       <div class="project-title">Abécédaire fantastique</div>
@@ -680,6 +721,36 @@ backButtons.forEach(btn => {
     header.classList.add('portfolio-only');
   });
 });
+
+  /* ===== BOUTONS DATA-PANEL (ex: bouton contact) ===== */
+
+    document.querySelectorAll('[data-panel]').forEach(el => {
+      el.addEventListener('click', e => {
+        e.preventDefault();
+
+        const target = el.dataset.panel;
+
+        // panels
+        panels.forEach(panel =>
+          panel.classList.toggle('active', panel.id === target)
+        );
+
+        // nav active
+        links.forEach(link =>
+          link.classList.toggle('active', link.dataset.panel === target)
+        );
+
+        // chevron (si existe dans la nav)
+        const navLink = document.querySelector(
+          `.nav a[data-panel="${target}"]`
+        );
+        if (navLink) moveChevron(navLink);
+
+        // layout header
+        header.classList.toggle('portfolio-only', target === 'portfolio');
+      });
+    });
+
   </script>
 
  </body> 

@@ -28,10 +28,122 @@ body {
 }
 
 h1 {
+  font-weight: 500;
+  color: #656D34;
+  text-align: left;
   font-family: AvantGarde, sans-serif;
-  font-size: 2rem;
-  max-width: 700px;
+  font-size: 2.3rem;
+  max-width: 800px;
   margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 500;
+  color: #8698EB;
+  text-align: left;
+  font-family: AvantGarde, sans-serif;
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 10px;
+}
+
+.services h1 {
+  font-family: Regilla, sans-serif;
+}
+
+.services-list {
+  max-width: 950px;
+}
+
+.services-list p{
+  text-justify: auto;
+  max-width: 850px;
+  color: #656D34;
+  text-align: left;
+  font-family: DM-sans, sans-serif;
+  font-size: 1.1rem;
+  margin: 5px;
+}
+
+.services-list ul {
+  list-style: none;
+  padding-left: 1.5rem;
+  margin-left: 0;
+}
+
+.services-list li{
+  position: relative;
+  padding-left: 1.2rem;
+  color: #656D34;
+  text-align: left;
+  font-family: DM-sans, sans-serif;
+  font-size: 1.1rem;
+}
+
+.services-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.services-title {
+  font-family: Regilla, serif;
+  font-size: 6.8rem;
+  color: #8698EB;
+  writing-mode: sideways-rl;
+  transform: rotate(180deg);
+  align-self: flex-end;
+}
+.services-wrapper {
+  max-width: 950px;
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.CTA {
+  text-align: center;
+  color: #656D34;
+  font-family: AvantGarde, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  max-width: 1000px;
+  margin-top: 2rem;
+}
+
+.services button {
+  text-decoration: none;
+  opacity: 85%;
+  font-size: 1rem;
+  font-family: DM-sans, sans-serif;
+  background: #656D34;
+  color: #F6E3D4;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .services-wrapper {
+    flex-direction: column;
+  }
+
+  .services button{
+    align-self: flex-end;
+  }
+
+  .services-title {
+    align-self: flex-start;
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 3rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -65,13 +177,11 @@ h1 {
   clip: rect(0,0,0,0);
 }
 
-.header.portfolio-only {
-  height: 100%;
-}
 
 .header.portfolio-only .header-left {
   width: 100%;
   padding-inline: clamp(2rem, 6vw, 8rem);
+  transition: width 0.4s ease, padding 0.4s ease;
 }
 
 .header.portfolio-only .header-right {
@@ -79,6 +189,7 @@ h1 {
   padding: 0;
   overflow: hidden;
   pointer-events: none;
+  transition: width 0.4s ease, padding 0.4s ease;
 }
 
 /* GAUCHE */
@@ -94,7 +205,7 @@ h1 {
 .header-left {
   background-color: #8698EB;
   color: #fff;
-  padding: clamp(2rem, 4vw, 4rem);
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,7 +321,7 @@ h1 {
   font-family: DM-sans,sans-serif;
   font-weight: 500;
   text-align: justify;
-  font-size: clamp(0.7rem, 1.4vw, 1.4rem);
+  font-size: clamp(1rem, 1.4vw, 1.4rem);
   color: #656D34;
   margin-bottom: 1rem;
 }
@@ -253,8 +364,10 @@ h1 {
 }
 
 .panel.about p {
-  max-width: 700px;
+  margin-top: 10px;
+  max-width: 800px;
 }
+
 
 .panel.active {
   opacity: 1;
@@ -273,7 +386,7 @@ h1 {
 .panel.active > * {
   opacity: 1;
   transform: translateY(0);
-  transition-delay: 0.1s;
+  transition-delay: 0.3s;
 }
 
 
@@ -293,6 +406,12 @@ h1 {
 }
 
 
+.panel.services {
+  display: flex;
+  flex-direction: column;
+
+}
+
 
 /* FORMULAIRE */
 
@@ -303,6 +422,8 @@ h1 {
   display: flex;
   align-items: flex-start;
 }
+
+
 
 
 /* FORM */
@@ -358,19 +479,40 @@ h1 {
 }
 
 .contact-form button {
+  opacity: 85%;
   margin-top: 1rem;
-  align-self: flex-end;
+  font-size: 1rem;
+  font-family: DM-sans, sans-serif;
+  align-self: center;
   background: #656D34;
   color: #F6E3D4;
   border: none;
   padding: 0.6rem 1.5rem;
   border-radius: 20px;
   cursor: pointer;
+  transition: all 0.2s ease;
 }
+
+
+
+button:hover {
+  transform: scale(1.03);
+  opacity: 100%;
+  letter-spacing: 0.04rem;
+  transition: all 0.2s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  opacity: 100%;
+  letter-spacing: 0.04rem;
+  transition: all 0.2s ease;
+}
+
 
 #contact.panel p {
   font-size: 1.2rem;
-  padding: 0rem 4rem 2rem 11rem;
+  padding: 0rem 10rem 2rem 11rem;
   text-align: center;
   font-family: DM-sans, sans-serif;
   color: #8698EB;
@@ -731,8 +873,9 @@ h1 {
   }
 
   .header-right {
+    overflow: visible;
     width: 100%;
-    padding: 1.5rem;
+    padding: 0rem;
     display: block;
   }
 
@@ -751,10 +894,26 @@ h1 {
     margin-top: 1.5rem;
   }
 
+  .panel:not(.active) {
+    display: none !important;
+    height: 0 !important;
+    overflow: hidden !important;
+  }
+
   .panel.active {
     display: block;
   }
 
+  .panel.services {
+    max-height: 70vh;
+    overflow-y: auto;
+    padding-inline: 1.2rem;
+  }
+
+  .services-list {
+    max-width: 100%;
+    padding-inline: 0;
+  }
 }
 
 
@@ -860,26 +1019,52 @@ h1 {
 }
 
 .back-to-portfolio {
+  width: 50px;
+  height: 50px;
   display: none;
-  margin: 1.2rem;
-  padding: 0.3rem 0.7rem;
-  background-color: rgba(134, 152, 235, 1);
-  border-radius: 100px;
+  background-color: rgba(246, 227, 212, 0.2);
   border: none;
-  font-family: DM-sans, sans-serif;
-  font-size: 0.9rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  line-height: 1;
   color: #F6E3D4;
-  opacity: 1;
   cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+
 }
 
-.back-to-portfolio:hover {
-  opacity: 1;
+.header-border {
+  display: none;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.7rem;
+  justify-content: center;
+  background-color: #8698EB;
 }
+
 
 
 @media (max-width: 900px) {
   .back-to-portfolio {
-    display: inline-block;
+    display: block;
   }
+
+  .header-border {
+  margin-top: 1rem;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  background-color: #8698EB;
+  }
+
+  .back-to-portfolio:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+
+  .back-to-portfolio:active {
+    transform: translateY(-1px);
+  }
+
+
 }
